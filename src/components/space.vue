@@ -1,6 +1,8 @@
 <template>
     <div class="space">
         <img class="ship" src="../assets/ship.png" alt="">
+        <img class="bullets" src="../assets/bullet.png" alt="">
+        <img class="aliens" src="../assets/alien.png" alt="">
     </div>
 </template>
 
@@ -13,6 +15,7 @@ export default {
     mounted() {
         var posX = null;
         var posY = null;
+        
                 
         window.addEventListener('keydown', function(event) {
             if(event.keyCode == 65) {
@@ -31,8 +34,12 @@ export default {
                 posY -= 5;
                 $('.ship').css('top', posY)
                 console.log(posY)
+            } else if(event.keyCode == 13) {
+                posY -=10;
+                $('.bullets').css('top', posY)
+                console.log(posY)
             }
-        });
+        });       
     }
 }
 </script>

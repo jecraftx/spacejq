@@ -36,9 +36,6 @@ export default {
   name: "Home",
   components: {
     // calculator
-    // test,
-    // first,
-    // second,
     // tictac,
     space
   },
